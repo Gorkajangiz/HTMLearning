@@ -1,0 +1,9 @@
+Creé la carpeta de archivos multimedia al principio del proyecto 
+cuando estaba organizando. Más tarde me di cuenta de que el atributo 
+"background-image" no permite espacios en los links que pones en 
+el "url()" posterior, así que las imágenes excepcionales estan aquí por eso.
+
+Actualización:
+He terminado el proyecto y CREO que no hay ninguna página que use un archivo 
+de esta carpeta porque las he ido cambiando, pero me da miedo borrarla igualmente, 
+así que consideremosla en desuso.

@@ -1,0 +1,2271 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atributos - CSS</title>
+    <link rel="icon" type="image/png" href="../../Archivos Multimedia/LogoReducido.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../HTMLearnEs - Estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header>
+      <nav>
+        <div class="NavegadoresCompletos">
+          <div class="contenedorLogo">
+            <a href="../Header/HTMLearnES.html">
+              <img src="../../Archivos Multimedia/LogoReducido.png" alt="HTMLearning">
+            </a>
+          </div>
+          <ul class="navegadores2">
+            <li>
+              <a href="../Header/HTMLearnES.html" class="btn SinFlecha">Inicio</a>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton htmlespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Html <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/htmlinformacion.html" class="MQM">Información</a></li>
+                <li><a href="../Header/htmlatributos.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/htmlguias.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/htmlejercicios.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton cssespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Css <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/cssinformacion.html" class="MQM">Información</a></li>
+                <li><a href="../Header/cssatributos.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/cssguias.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/cssejercicios.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton javascriptespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/badgateway.html" class="MQM">Información</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../Footer/precios.html" class="btn SinFlecha">Precios</a>
+            </li>
+            <li>
+              <a href="../Header/contactanos.html" class="btn SinFlecha">Contáctanos</a>
+            </li>
+          </ul>
+          <div class="derecha">
+            <div class="navegadores3">
+              <a href="../Header/iniciasesion.html" class="btn SinFlecha">Iniciar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intermediador">
+        <div class="estandar" style="padding-left: 30px;">  
+            <h1>Guía de Etiquetas CSS</h1><br>
+
+            <div class="cajaIndex">
+              <ul>
+                <p style="font-weight: bold;font-size: 1.3em;margin-bottom: 0px;">1. Principiante</p>
+                <li><a href="#salto1at">1.1. Atributos de Layout y Posicionamiento</a></li>
+                <li><a href="#salto2at">1.2. Propiedades de los Textos</a></li>
+                <li><a href="#salto3at">1.3. Propiedades de las Fuentes</a></li>
+                <li><a href="#salto4at">1.4. Propiedades de las Listas</a></li>
+                <li><a href="#salto5at">1.5. Propiedades de las Tablas</a></li>
+                <li><a href="#salto6at">1.6. Pseudo-clases para selección de hijos o hermanos</a></li>
+                <li><a href="#salto7at">1.7. Pseudo-clases para los estados de un elemento</a></li>
+                <li><a href="#salto8at">1.8. Pseudo-elementos</a></li>
+                <li><a href="#salto9at">1.9. Modelo de cajas: Márgenes, relleno y bordes</a></li>
+                <li><a href="#salto10at">1.10. Propiedades width, height, max-width, min-width, max-height y min-height</a></li>
+                <li><a href="#salto11at">1.11. Comportamiento de los Contenedores</a></li>
+                <li><a href="#salto12at">1.12. Tamaño de los Elementos</a></li>
+                <li><a href="#salto13at">1.13. Propiedad Overflow, Excedente de Contenido</a></li>
+              </ul>
+              
+              <ul>
+                <p style="font-weight: bold;font-size: 1.3em;margin-bottom: 0px;">2. Intermedio</p>
+                <li><a href="#salto14at">2.1. Medios en CSS</a></li>
+                <li><a href="#salto15at">2.2. Media queries</a></li>
+                <li><a href="#salto16at">2.3. Cursores: propiedad cursor</a></li>
+                <li><a href="#salto17at">2.4. Sombras CSS</a></li>
+                <li><a href="#salto18at">2.5. Selector de atributos CSS</a></li>
+                <li><a href="#salto19at">2.6. Formatos de las fuentes</a></li>
+                <li><a href="#salto20at">2.7. Flexbox CSS</a></li>
+              </ul>
+              
+              <ul>
+                <p style="font-weight: bold;font-size: 1.3em;margin-bottom: 0px;">3. Avanzado</p>
+                <li><a href="#salto21at">3.1. Gradiente linear y radial CSS</a></li>
+                <li><a href="#salto22at">3.2. Transiciones CSS</a></li>
+                <li><a href="#salto23at">3.3. Transformaciones CSS</a></li>
+                <li><a href="#salto24at">3.4. Animaciones CSS</a></li>
+                <li><a href="#salto25at">3.5. Funciones Matemáticas en CSS</a></li>
+                <li><a href="#salto26at">3.6. CSS Grid</a></li>
+                <li><a href="#salto27at">3.7. CSS Clamp()</a></li>
+                <li><a href="#salto28at">3.8. CSS line-clamp</a></li>
+                <li><a href="#salto29at">3.9. CSS Scroll Snap</a></li>
+                <li><a href="#salto30at">3.10. CSS scroll-behavior</a></li>
+                <li><a href="#salto31at">3.11. CSS mix-blend-mode</a></li>
+              </ul>
+              
+            </div>
+            <br><br>
+
+            <h2>Propiedades de nivel principiante</h2>
+  
+            <h4 id="salto1at"> 1.1 - Atributos de Layout y Posicionamiento</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>color</strong></code>
+                  </td>
+                  <td>
+                    Color del texto
+                  </td>
+                  <td>
+                    RGB | HSL | HEX | nombre del color | RGBA | HSLA
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>background-color</strong></code>
+                  </td>
+                  <td>
+                    Color de fondo
+                  </td>
+                  <td>
+                    RGB | HSL | HEX | nombre del color | RGBA | HSLA
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>background-image</strong></code>
+                  </td>
+                  <td>
+                    Imagen de fondo
+                  </td>
+                  <td>
+                    url(«…») | none
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>background-repeat</strong></code>
+                  </td>
+                  <td>
+                    Repetición de la imagen de fondo
+                  </td>
+                  <td>
+                    repeat | repeat-x | repeat-y | no-repeat
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>background-attachment</strong></code>
+                  </td>
+                  <td>
+                    Desplazamiento de la imagen de fondo
+                  </td>
+                  <td>
+                    scroll | fixed
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>background-position</strong></code>
+                  </td>
+                  <td>
+                    Posición de la imagen de fondo
+                  </td>
+                  <td>
+                    percentage | length | left | center | right
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>background-size</strong></code>
+                  </td>
+                  <td>
+                    Tamaño de la imagen de fondo
+                  </td>
+                  <td>
+                    auto | cover | contain | valor
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>Opacity</strong></code>
+                  </td>
+                  <td>
+                    Transparencia de un elemento
+                  </td>
+                  <td>
+                    [ 0 – 1 ] (0 → totalmente transparente)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto2at"> 1.2 - Propiedades de los Textos</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>text-indent</strong></code>
+                  </td>
+                  <td>
+                    Desplazamiento de la primera línea del texto
+                  </td>
+                  <td>
+                    longitud | porcentaje
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>text-align</strong></code>
+                  </td>
+                  <td>
+                    Alineamiento del texto
+                  </td>
+                  <td>
+                    left | right | center | justify
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>text-decoration</strong></code>
+                  </td>
+                  <td>
+                    Efectos de subrayado y tachado
+                  </td>
+                  <td>
+                    none | underline | overline | line-through
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>letter-spacing</strong></code>
+                  </td>
+                  <td>
+                    Espacio entre caracteres
+                  </td>
+                  <td>
+                    normal | longitud
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>word-spacing</strong></code>
+                  </td>
+                  <td>
+                    Espacio entre palabras
+                  </td>
+                  <td>
+                    normal | longitud
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>text-transform</strong></code>
+                  </td>
+                  <td>
+                    Transformación a mayúsculas / minúsculas
+                  </td>
+                  <td>
+                    capitalize | uppercase | lowercase | none
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>line-height</strong></code>
+                  </td>
+                  <td>
+                    Tamaño del espacio entre líneas
+                  </td>
+                  <td>
+                    longitud | porcentaje
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>vertical-align</strong></code>
+                  </td>
+                  <td>
+                    Alineación vertical
+                  </td>
+                  <td>
+                    top | middle | bottom | baseline | sub | super | valor
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto3at"> 1.3 - Propiedades de las Fuentes</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>font-family</strong></code>
+                  </td>
+                  <td>
+                    Familias de fuentes
+                  </td>
+                  <td>
+                    nombre-familia|nombre-familia-genérica| *
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>font-style</strong></code>
+                  </td>
+                  <td>
+                    Estilo de la fuente
+                  </td>
+                  <td>
+                    normal | italic | oblique
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>font-variant</strong></code>
+                  </td>
+                  <td>
+                    Convierte a mayúsculas manteniendo un tamaño inferior
+                  </td>
+                  <td>
+                    normal | small-caps
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>font-weight</strong></code>
+                  </td>
+                  <td>
+                    Anchura de los caracteres. Normal = 400, Negrita = 700
+                  </td>
+                  <td>
+                    normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>font-size</strong></code>
+                  </td>
+                  <td>
+                    Tamaño de la fuente
+                  </td>
+                  <td>
+                    xx-small | x-small | small | medium | large | x-large | xx-large | larger | smaller | longitud | porcentaje
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto4at"> 1.4 - Propiedades de las Listas</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>list-style-type</strong></code>
+                  </td>
+                  <td>
+                    Estilo aplicable a los marcadores visuales o viñetas de las listas
+                  </td>
+                  <td>
+                    disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-greek | lower-latin | upper-latin | armenian | georgian | lower-alpha | upper-alpha | none
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>list-style-image</strong></code>
+                  </td>
+                  <td>
+                    Imagen aplicable a las viñetas de las listas
+                  </td>
+                  <td>
+                    url(«…») | none
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>list-style-position</strong></code>
+                  </td>
+                  <td>
+                    Posición de las viñetas dentro de la lista
+                  </td>
+                  <td>
+                    inside | outside
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>list-style</strong></code>
+                  </td>
+                  <td>
+                    Permite establecer varios estilos de la lista en una sola propiedad
+                  </td>
+                  <td>
+                    list-style-type | list-style-position | list-style-image
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto5at"> 1.5 - Propiedades de las Tablas</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>caption-side</strong></code>
+                  </td>
+                  <td>
+                    Posición del título respecto la tabla
+                  </td>
+                  <td>
+                    top | bottom
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>table-layout</strong></code>
+                  </td>
+                  <td>
+                    Formato de las celdas, filas y columnas
+                  </td>
+                  <td>
+                    auto | fixed
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>border-collapse</strong></code>
+                  </td>
+                  <td>
+                    Selección del modelo de los bordes
+                  </td>
+                  <td>
+                    collapse | separate
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>border-spacing</strong></code>
+                  </td>
+                  <td>
+                    Espaciado entre los bordes de celdas adyacentes
+                  </td>
+                  <td>
+                    longitud
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>empty-cells</strong></code>
+                  </td>
+                  <td>
+                    Visibilidad de los bordes de celdas sin contenido
+                  </td>
+                  <td>
+                    show | hide
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto6at">1.6 - Pseudo-clases para selección de hijos o hermanos</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>Pseudo-clase</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td><code>:first-child</code></td>
+                  <td>Primer hijo</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:last-child</code></td>
+                  <td>Último hijo</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:first-of-type</code></td>
+                  <td>Primer hermano de su tipo</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:last-of-type</code></td>
+                  <td>Último hermano de su tipo</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:only-child</code></td>
+                  <td>Hijos únicos</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:only-of-type</code></td>
+                  <td>Únicos hermanos de su tipo</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:empty</code></td>
+                  <td>Elementos que no tienen hijos</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:nth-child(n)</code></td>
+                  <td>Enésimo elemento hijo</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:nth-last-child(n)</code></td>
+                  <td>Enésimo elemento hijo contando desde el último</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:nth-of-type(n)</code></td>
+                  <td>Enésimo hermano de su tipo</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:nth-last-of-type(n)</code></td>
+                  <td>Enésimo hermano de su tipo comenzando desde el último</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <br><br><br>
+            <h4 id="salto7at">1.7 - Pseudo-clases para los estados de un elemento</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>Pseudo-clase</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td><code>:link</code></td>
+                  <td>No visitado por el usuario</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:visited</code></td>
+                  <td>Visitado por el usuario</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:hover</code></td>
+                  <td>Modifica el estilo cuando un elemento apuntador pasa por encima</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>:active</code></td>
+                  <td>Se activa cuando el usuario pulsa el elemento</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>:focus</code></td>
+                  <td>Se activa cuando tiene el foco sobre el elemento</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <br><br><br>
+            <h4 id="salto8at">1.8 - Pseudo-elementos</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>Pseudo-clase</th>
+                  <th>Descripción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td><code>::first-line</code></td>
+                  <td>Primera línea de texto de un elemento</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>::first-letter</code></td>
+                  <td>Primera letra de la primera línea de texto de un elemento</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>::before</code></td>
+                  <td>Añade contenido al principio del documento</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>::after</code></td>
+                  <td>Añade contenido al final del documento</td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <br><br><br>
+            <h4 id="salto9at">1.9 - Modelo de cajas: Márgenes, relleno y bordes</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>Propiedad</th>
+                  <th>Descripción</th>
+                  <th>Valores</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td><code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, <code>padding-left</code></td>
+                  <td>Tamaño del relleno superior, derecho, inferior e izquierdo</td>
+                  <td>longitud | porcentaje</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>padding</code></td>
+                  <td>Tamaño del relleno</td>
+                  <td>longitud | porcentaje {1,4}</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code></td>
+                  <td>Tamaño del margen superior, derecho, inferior e izquierdo</td>
+                  <td>longitud | porcentaje | auto</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>margin</code></td>
+                  <td>Ancho de los márgenes</td>
+                  <td>longitud | porcentaje | auto {1,4}</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>border-top-width</code>, <code>border-right-width</code>, <code>border-bottom-width</code>, <code>border-left-width</code></td>
+                  <td>Anchura del borde superior, derecho, inferior o izquierdo</td>
+                  <td>thin | medium | thick | longitud</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>border-width</code></td>
+                  <td>Anchura del borde</td>
+                  <td>thin | medium | thick | longitud {1,4}</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>border-top-color</code>, <code>border-right-color</code>, <code>border-bottom-color</code>, <code>border-left-color</code></td>
+                  <td>Color del borde superior, derecho, inferior e izquierdo</td>
+                  <td>color | transparent</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>border-color</code></td>
+                  <td>Color del borde</td>
+                  <td>color | transparent {1,4}</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>border-top-style</code>, <code>border-right-style</code>, <code>border-bottom-style</code>, <code>border-left-style</code></td>
+                  <td>Estilo del borde superior, derecho, inferior e izquierdo</td>
+                  <td>none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>border-style</code></td>
+                  <td>Estilo del borde</td>
+                  <td>none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset {1,4}</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>border-top</code>, <code>border-right</code>, <code>border-bottom</code>, <code>border-left</code></td>
+                  <td>Ancho, estilo y color para el borde superior, derecho, inferior e izquierdo</td>
+                  <td>border-top-width | border-top-style | border-top-color</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>border</code></td>
+                  <td>Ancho, estilo y color para los bordes</td>
+                  <td>border-width | border-style | border-color</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>border-radius</code></td>
+                  <td>Curvatura del borde</td>
+                  <td>longitud | porcentaje {1,4}</td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto10at"> 1.10 - Propiedades width, height, max-width, min-width, max-height y min-height</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Nombre propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho del área de contenido de un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>height</strong></code>
+                  </td>
+                  <td>
+                    Establece el alto del área de contenido de un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>max-width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho máximo que puede tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), none, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>min-width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho mínimo que debe tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), 0, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>max-height</strong></code>
+                  </td>
+                  <td>
+                    Establecer el alto máximo que debe tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), 0, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>min-height</strong></code>
+                  </td>
+                  <td>
+                    Establecer el alto mínimo que debe tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), 0, initial, inherit
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto11at"> 1.11 - Comportamiento de los Contenedores</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>display</strong></code>
+                  </td>
+                  <td>
+                    Comportamiento del contenedor
+                  </td>
+                  <td>
+                    inline | block | inline-block | none
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>position</strong></code>
+                  </td>
+                  <td>
+                    Esquema de posicionamiento
+                  </td>
+                  <td>
+                    static | relative | absolute | fixed
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>top right bottom left</strong></code>
+                  </td>
+                  <td>
+                    Desplazamiento de la caja respecto al borde superior, derecho, inferior o izquierdo
+                  </td>
+                  <td>
+                    longitud | porcentaje | auto
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>float</strong></code>
+                  </td>
+                  <td>
+                    Posicionamiento flotante
+                  </td>
+                  <td>
+                    left | right | none
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>clear</strong></code>
+                  </td>
+                  <td>
+                    Control de cajas adyacentes a las float
+                  </td>
+                  <td>
+                    none | left | right | both
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>z-index</strong></code>
+                  </td>
+                  <td>
+                    Nivel de la capa
+                  </td>
+                  <td>
+                    auto | número entero
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>box-sizing</strong></code>
+                  </td>
+                  <td>
+                    Control de bordes y relleno en el comportamiento del contenedor
+                  </td>
+                  <td>
+                    content-box | border-box
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>visibility</strong></code>
+                  </td>
+                  <td>
+                    Muestra u oculta un elemento ocupando el espacio
+                  </td>
+                  <td>
+                    visible | hidden
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>overflow</strong></code>
+                  </td>
+                  <td>
+                    Visibilidad de los elementos de tipo bloque
+                  </td>
+                  <td>
+                    visible | hidden | scroll | auto
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto12at"> 1.12 - Tamaño de los Elementos</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Nombre propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho del área de contenido de un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>height</strong></code>
+                  </td>
+                  <td>
+                    Establece el alto del área de contenido de un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), auto, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>max-width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho máximo que puede tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), none, initial, inherit
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>min-width</strong></code>
+                  </td>
+                  <td>
+                    Establece el ancho mínimo que debe tener un elemento
+                  </td>
+                  <td>
+                    Unidad de longitud (px, em, %, etc.), 0, initial, inherit
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto13at"> 1.13 - Propiedad Overflow, Excedente de Contenido</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad CSS overflow
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>overflow</strong></code>
+                  </td>
+                  <td>
+                    visible, hidden, scroll, auto
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>overflow: visible</strong></code>
+                  </td>
+                  <td>
+                    Por defecto
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>overflow: hidden</strong></code>
+                  </td>
+                  <td>
+                    Oculta los contenidos desbordados
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>overflow: scroll</strong></code>
+                  </td>
+                  <td>
+                    Muestra barras de desplazamiento
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>overflow: auto</strong></code>
+                  </td>
+                  <td>
+                    El navegador decide
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>overflow-x</strong></code>
+                  </td>
+                  <td>
+                    visible, hidden, scroll, auto
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>overflow-y</strong></code>
+                  </td>
+                  <td>
+                    visible, hidden, scroll, auto
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h2>2. Propiedades de nivel intermedio</h2><br>
+            <h4 id="salto14at"> 2.1 - Medios en CSS</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Medio
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>all</strong></code>
+                  </td>
+                  <td>
+                    Todos los dispositivos
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>print</strong></code>
+                  </td>
+                  <td>
+                    Para documentos paginados y mostrados en vista de impresión
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>screen</strong></code>
+                  </td>
+                  <td>
+                    Pantallas de ordenador
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>speech</strong></code>
+                  </td>
+                  <td>
+                    Sintetizadores para navegadores de voz utilizados por personas discapacitadas
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto15at"> 2.2 - Media queries</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Expresión
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code>@media (min-width: 768px)</code>
+                  </td>
+                  <td>
+                    Estilos para pantallas con un ancho mínimo de 768px
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>@media (max-width: 767px)</code>
+                  </td>
+                  <td>
+                    Estilos para pantallas con un ancho máximo de 768px
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>@media (min-width: 768px) and (max-width: 1024px)</code>
+                  </td>
+                  <td>
+                    Estilos para pantallas con un ancho entre 768px y 1024px
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto16at"> 2.3 - Cursores: propiedad cursor</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Valor cursor
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>crosshair</strong></code>
+                  </td>
+                  <td>
+                    Cursor tipo cruz para tareas en las que se requiere precisión.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>help</strong></code>
+                  </td>
+                  <td>
+                    Interrogación. Cursor de ayuda.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>move</strong></code>
+                  </td>
+                  <td>
+                    Flechas hacia todos lados. Cursor para mover elementos.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>pointer</strong></code>
+                  </td>
+                  <td>
+                    Mano o apuntador. Cursor para hacer clic.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>progress</strong></code>
+                  </td>
+                  <td>
+                    Barra progreso o similar. Cursor que indica que se está trabajando en segundo plano.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>text</strong></code>
+                  </td>
+                  <td>
+                    Cursor que permite seleccionar texto.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>wait</strong></code>
+                  </td>
+                  <td>
+                    Cursor que indica que se debe esperar.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>vertical-text</strong></code>
+                  </td>
+                  <td>
+                    Flecha vertical, utilizado para texto en orientación vertical.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>alias</strong></code>
+                  </td>
+                  <td>
+                    Flecha diagonal, utilizado para indicar que se puede acceder a un enlace o recurso externo.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>no-drop</strong></code>
+                  </td>
+                  <td>
+                    Círculo con una línea diagonal, utilizado para indicar que no se permite soltar el elemento arrastrado.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>grab</strong></code>
+                  </td>
+                  <td>
+                    Mano cerrada, utilizado para indicar que el elemento se puede agarrar
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>grabbing</strong></code>
+                  </td>
+                  <td>
+                    Mano abierta, utilizado para indicar que el elemento está siendo arrastrado o agarrado.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>zoom-in</strong></code>
+                  </td>
+                  <td>
+                    Símbolo de lupa con un signo de más, utilizado para indicar que se puede hacer zoom in.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>zoom-out</strong></code>
+                  </td>
+                  <td>
+                    Símbolo de lupa con un signo de menos, utilizado para indicar que se puede hacer zoom out.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>not-allowed</strong></code>
+                  </td>
+                  <td>
+                    Círculo con una línea diagonal, utilizado para indicar que la interacción no está permitida.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>cell</strong></code>
+                  </td>
+                  <td>
+                    Cursor tipo cruz, utilizado en hojas de cálculo para ajustar celdas.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>copy</strong></code>
+                  </td>
+                  <td>
+                    Puntero con un símbolo de copia, utilizado para indicar que se puede realizar una copia de un elemento.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>ew-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional horizontal, utilizado para indicar que se puede ajustar el tamaño horizontalmente.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>ns-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional vertical, utilizado para indicar que se puede ajustar el tamaño verticalmente.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>nwse-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noroeste-sureste.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>nesw-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional diagonal, utilizado para indicar que se puede ajustar el tamaño diagonalmente en dirección noreste-suroeste.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>col-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional horizontal con una línea vertical, utilizado para indicar que se puede ajustar el tamaño de una columna.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>row-resize</strong></code>
+                  </td>
+                  <td>
+                    Flecha bidireccional vertical con una línea horizontal, utilizado para indicar que se puede ajustar el tamaño de una fila.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>context-menu</strong></code>
+                  </td>
+                  <td>
+                    Puntero con un símbolo de menú, utilizado para indicar que se puede abrir un menú contextual.
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code><strong>none</strong></code>
+                  </td>
+                  <td>
+                    No se muestra ningún cursor.
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>Personalized</strong></code>
+                  </td>
+                  <td>
+                    Imagen o valor personalizado en el cursor.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto17at"> 2.4 - Sombras CSS</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                  <th>
+                    Ejemplo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code><strong>text-shadow</strong></code>
+                  </td>
+                  <td>
+                    <code>posx posy desenfoque color | none</code>
+                  </td>
+                  <td>
+                    <code>text-shadow: 2px 2px 5px red;</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code><strong>box-shadow</strong></code>
+                  </td>
+                  <td>
+                    <code>posx posy desenfoque posición color inset | none</code>
+                  </td>
+                  <td>
+                    <code>box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto18at"> 2.5 - Selector de atributos CSS</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Selector
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code>[nombre_atributo]</code>
+                  </td>
+                  <td>
+                    Selecciona los elementos que tienen establecido el atributo llamado nombre_atributo independientemente de su valor
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>[nombre_atributo=valor]</code>
+                  </td>
+                  <td>
+                    Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo con un valor igual a valor
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>[nombre_atributo~=valor]</code>
+                  </td>
+                  <td>
+                    Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y al menos uno de los valores del atributo es valor
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>[nombre_atributo|=valor]</code>
+                  </td>
+                  <td>
+                    Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo, cuyo valor es una lista de valores, donde alguno comienza por valor
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>[nombre_atributo$=valor]</code>
+                  </td>
+                  <td>
+                    Selecciona aquellas etiquetas cuyo atributo acabe en ese valor
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>[nombre_atributo^=valor]</code>
+                  </td>
+                  <td>
+                    Selecciona aquellas etiquetas cuyo atributo comience por ese valor
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto19at"> 2.6 - Formatos de las fuentes</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Formato
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code>EOT</code>
+                  </td>
+                  <td>
+                    Embedded OpenType, Explorer
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>TTF</code>
+                  </td>
+                  <td>
+                    TrueType Font, IOS
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>WOFF</code>
+                  </td>
+                  <td>
+                    Web Open Font Format, Chrome
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>WOFF2</code>
+                  </td>
+                  <td>
+                    Mejora de WOFF
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>SVG</code>
+                  </td>
+                  <td>
+                    Scalar Vector Graphics
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h4 id="salto20at"> 2.7 - Flexbox CSS</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Descripción
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                  <th>
+                    Ejemplo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code>display</code>
+                  </td>
+                  <td>
+                    Define el contenedor como un flex container
+                  </td>
+                  <td>
+                    <code>flex</code>
+                  </td>
+                  <td>
+                    <code>display: flex;</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>flex-wrap</code>
+                  </td>
+                  <td>
+                    Controla si los elementos flex deben trasladarse a la siguiente fila
+                  </td>
+                  <td>
+                    <code>nowrap</code> (por defecto), <code>wrap</code>, <code>wrap-reverse</code>
+                  </td>
+                  <td>
+                    <code>flex-wrap: wrap;</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>justify-content</code>
+                  </td>
+                  <td>
+                    Alineación horizontal de los elementos de un contenedor flexible
+                  </td>
+                  <td>
+                    <code>flex-start</code> (por defecto), <code>flex-end</code>, <code>center</code>, <code>space-between</code>, <code>space-around</code>, <code>space-evenly</code>
+                  </td>
+                  <td>
+                    <code>justify-content: space-between;</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>align-items</code>
+                  </td>
+                  <td>
+                    Alineación vertical de los elementos de un contenedor flexible
+                  </td>
+                  <td>
+                    <code>stretch</code> (por defecto), <code>flex-start</code>, <code>flex-end</code>, <code>center</code>, <code>baseline</code>
+                  </td>
+                  <td>
+                    <code>align-items: center;</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>flex-direction</code>
+                  </td>
+                  <td>
+                    Dirección de los elementos
+                  </td>
+                  <td>
+                    <code>row</code> (por defecto), <code>row-reverse</code>, <code>column</code>, <code>column-reverse</code>
+                  </td>
+                  <td>
+                    <code>flex-direction: row;</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>flex-grow</code>
+                  </td>
+                  <td>
+                    Controla cómo los elementos flex se expanden
+                  </td>
+                  <td>
+                    Número (valor relativo)
+                  </td>
+                  <td>
+                    <code>flex-grow: 1;</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>flex-shrink</code>
+                  </td>
+                  <td>
+                    Controla cómo los elementos flex se encogen
+                  </td>
+                  <td>
+                    Número (valor relativo)
+                  </td>
+                  <td>
+                    <code>flex-shrink: 1;</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>flex-basis</code>
+                  </td>
+                  <td>
+                    Tamaño inicial de los elementos flex
+                  </td>
+                  <td>
+                    Valor, <code>auto</code> (por defecto)
+                  </td>
+                  <td>
+                    <code>flex-basis: 100px;</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>order</code>
+                  </td>
+                  <td>
+                    Orden de los elementos flex dentro del contenedor
+                  </td>
+                  <td>
+                    Número (entero)
+                  </td>
+                  <td>
+                    <code>order: 1;</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <br><br><br>
+
+            <h2>3. Propiedades de nivel avanzado</h2><br>
+            <h4 id="salto21at"> 3.1 - Gradiente linear y radial CSS</h4>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>
+                    Propiedad
+                  </th>
+                  <th>
+                    Valores
+                  </th>
+                  <th>
+                    Ejemplo
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>linear-gradient(dirección{to top, to bottom, to left y to right}|ángulo, color, color, color…)</code>
+                  </td>
+                  <td>
+                    <code>background: linear-gradient(to right, red, orange);</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>linear-gradient(dirección{to top, to bottom, to left y to right}|ángulo, color posición, color posición, color posición…)</code>
+                  </td>
+                  <td>
+                    <code>background: linear-gradient(to right, red 20%, orange 40%);</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>linear-gradient(color, color, color…)</code>
+                  </td>
+                  <td>
+                    <code>background: linear-gradient(red, orange);</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>radial-gradient(forma{circle y ellipse}, color, color, color…)</code>
+                  </td>
+                  <td>
+                    <code>background: radial-gradient(circle, red, orange);</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>radial-gradient(forma{circle y ellipse} posición, color, color, color…)</code>
+                  </td>
+                  <td>
+                    <code>background: radial-gradient(circle closest-side, red, orange);</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>radial-gradient(forma{circle y ellipse}, color posición, color posición, color posición…)</code>
+                  </td>
+                  <td>
+                    <code>background: radial-gradient(circle at top left, red 20%, orange 40%);</code>
+                  </td>
+                </tr>
+                <tr class="c2">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>radial-gradient(color, color, color…)</code>
+                  </td>
+                  <td>
+                    <code>background: radial-gradient(red, orange, blue);</code>
+                  </td>
+                </tr>
+                <tr class="c1">
+                  <td>
+                    <code>background</code>
+                  </td>
+                  <td>
+                    <code>radial-gradient(farthest-side, color, color, …)</code>
+                  </td>
+                  <td>
+                    <code>background: radial-gradient(farthest-side, red, blue);</code>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br><br>
+            <h4 id="salto22at"> 3.2 - Transiciones CSS</h4>
+                <p><code>transition:[propiedad a modificar] [Duración] [Tipo de animación] [Retardo];</code></p>
+
+                <h4 id="salto23at"> 3.3 - Transformaciones CSS</h4>
+                <p><code>transform: funcion(&lt;valor&gt;);</code></p>
+                <table>
+                    <thead>
+                        <tr class="c1">
+                            <th>Función</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="c2">
+                            <td>Scale</td>
+                            <td>Se establece con uno o dos valores que representan la cantidad de escala. Si el valor está fuera de [-1, 1], el elemento crece; si está dentro, se encoge.</td>
+                            <td><code>transform: scale(0.5);</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>Translate</td>
+                            <td>Cambia la posición del elemento hacia izquierda, derecha, arriba o abajo.</td>
+                            <td><code>transform: translate(10px);</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>Rotate</td>
+                            <td>Gira el elemento en grados.</td>
+                            <td><code>transform: rotate(45deg);</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>Skew</td>
+                            <td>Distorsiona los elementos según un ángulo.</td>
+                            <td><code>transform: skew(45deg);</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>Matrix</td>
+                            <td>Realiza una transformación con precisión de píxel.</td>
+                            <td><code>transform: matrix(0.5, 0.1, 0.5, 1, 10, -2);</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+
+                <br><br><br>
+                <h4 id="salto24at"> 3.4 - Animaciones CSS</h4>
+            <p>Sintaxis propiedad abreviada:</p>
+            <pre style="margin-right: 30%;"><code>selector {
+              animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+            }</code></pre>
+            <ol>
+              <li><span>name</span>: Nombre de la regla @keyframes que describe los fotogramas de la animación.</li>
+              <li><span>duration</span>: Tiempo en que la animación completa su ciclo (en segundos o milisegundos).</li>
+              <li><span>timing-function</span>: Ritmo de la animación (puede ser lineal, ease, ease-in, etc.).</li>
+              <li><span>delay</span>: Tiempo de espera antes de comenzar la animación (en segundos o milisegundos).</li>
+              <li><span>iteration-count</span>: Número de repeticiones de la animación (puede ser infinito o un número específico).</li>
+              <li><span>direction</span>: Define si la animación retrocederá al inicio al finalizar.</li>
+              <li><span>fill-mode</span>: Especifica los valores después de finalizar la animación.</li>
+              <li><span>play-state</span>: Permite pausar o reanudar la animación.</li>
+            </ol>
+            <p>Sintaxis subpropiedades:</p>
+            <pre style="margin-right: 30%;"><code>selector {
+                animation-name: identifier;
+                subproperty: value;
+            }</code></pre>
+            <br><br><br>
+                <h4 id="salto25at"> 3.5 - Funciones Matemáticas en CSS</h4>
+                <table>
+                    <thead>
+                        <tr class="c1">
+                            <th>Función</th>
+                            <th>Descripción</th>
+                            <th>Valores Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="c2">
+                            <td>abs()</td>
+                            <td>Devuelve el valor absoluto de un número.</td>
+                            <td><code>abs(-10) = 10</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>sin()</td>
+                            <td>Devuelve el seno de un ángulo.</td>
+                            <td><code>sin(45deg) ≈ 0.71</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>cos()</td>
+                            <td>Devuelve el coseno de un ángulo.</td>
+                            <td><code>cos(60deg) = 0.5</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>tan()</td>
+                            <td>Devuelve la tangente de un ángulo.</td>
+                            <td><code>tan(30deg) ≈ 0.58</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>sqrt()</td>
+                            <td>Devuelve la raíz cuadrada de un número.</td>
+                            <td><code>sqrt(16) = 4</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>pow()</td>
+                            <td>Eleva un número a una potencia.</td>
+                            <td><code>pow(2, 3) = 8</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>min()</td>
+                            <td>Devuelve el valor mínimo entre dos números.</td>
+                            <td><code>min(10, 5) = 5</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>max()</td>
+                            <td>Devuelve el valor máximo entre dos números.</td>
+                            <td><code>max(10, 5) = 10</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>random()</td>
+                            <td>Devuelve un número aleatorio entre 0 y 1.</td>
+                            <td><code>random() ≈ 0.35</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>floor()</td>
+                            <td>Devuelve el valor entero menor o igual.</td>
+                            <td><code>floor(3.8) = 3</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>ceil()</td>
+                            <td>Devuelve el valor entero mayor o igual.</td>
+                            <td><code>ceil(3.2) = 4</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>round()</td>
+                            <td>Devuelve el valor redondeado al entero más cercano.</td>
+                            <td><code>round(3.7) = 4</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>clamp()</td>
+                            <td>Limita un valor dentro de un rango.</td>
+                            <td><code>clamp(10, 5, 8) = 8</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>calc()</td>
+                            <td>Realiza cálculos matemáticos en propiedades CSS.</td>
+                            <td><code>width: calc(100% - 20px);</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>attr()</td>
+                            <td>Obtiene el valor de un atributo HTML y lo usa en CSS.</td>
+                            <td><code>content: attr(data-text);</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+                <h4 id="salto26at"> 3.6 - CSS Grid</h4>
+                <table>
+                    <thead>
+                        <tr class="c1">
+                            <th>Propiedad</th>
+                            <th>Descripción</th>
+                            <th>Valores Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="c2">
+                            <td>display</td>
+                            <td>Define el contenedor como un grid container.</td>
+                            <td><code>grid</code> (por defecto), <code>inline-grid</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>grid-template-columns</td>
+                            <td>Define las columnas del grid.</td>
+                            <td><code>grid-template-columns: 1fr 2fr 1fr;</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>grid-template-rows</td>
+                            <td>Define las filas del grid.</td>
+                            <td><code>grid-template-rows: 100px 200px;</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>grid-gap</td>
+                            <td>Propiedad abreviada para establecer el espacio entre columnas y filas.</td>
+                            <td><code>grid-gap: 10px;</code></td>
+                        </tr>
+                        <tr class="c2">
+                            <td>grid-column-gap</td>
+                            <td>Establece el tamaño del espacio entre columnas.</td>
+                            <td><code>grid-column-gap: 20px;</code></td>
+                        </tr>
+                        <tr class="c1">
+                            <td>grid-row-gap</td>
+                            <td>Establece el tamaño del espacio entre filas.</td>
+                            <td><code>grid-row-gap: 10px;</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+
+                <h4 id="salto27at"> 3.7 - CSS Clamp()</h4>
+                <p><code>propiedad: clamp(valor_mínimo, valor_preferido, valor_máximo);</code></p>
+                <br><br><br>
+
+                <h4 id="salto28at"> 3.8 - CSS line-clamp</h4>
+                <pre style="margin-right: 30%;"><code>.elemento-truncado {
+                display: -webkit-box;
+                -webkit-line-clamp: <numero_de_lineas>;
+                -webkit-box-orient: horizontal | vertical;
+                overflow: hidden;
+            }</code></pre>
+            <br><br><br>
+
+                <h4 id="salto29at"> 3.9 - CSS Scroll Snap</h4>
+                <pre style="margin-right: 30%;"><code>.contenedor-scroll {
+                scroll-snap-type: [x | y | block | inline] [mandatory | proximity];
+            }
+            .seccion {
+                scroll-snap-align: [start | center | end | none];
+            }</code></pre>
+            <br><br><br>
+
+                <h4 id="salto30at"> 3.10 - CSS scroll-behavior</h4>
+                <pre style="margin-right: 30%;"><code>html {
+                scroll-behavior: auto | smooth;
+            }</code></pre>
+            <br><br><br>
+
+            <h4 id="salto31at"> 3.11 - CSS mix-blend-mode</h4>
+            <pre style="margin-right: 30%;"><code>.elemento {
+              mix-blend-mode: <modo-de-mezcla>;
+            }</code></pre>
+            <table>
+                <thead>
+                    <tr class="c1">
+                        <th>Blend Mode</th>
+                        <th>Descripción</th>
+                        <th>Características</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="c2">
+                        <td><code>multiply</code></td>
+                        <td>Multiplica los colores de la capa superior con los de la capa inferior.</td>
+                        <td>Oscurece la imagen resultante.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>screen</code></td>
+                        <td>Invierte los colores de la capa superior y los multiplica con los de la capa inferior.</td>
+                        <td>Aclara las áreas de la imagen.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>overlay</code></td>
+                        <td>Combina <code>Multiply</code> y <code>Screen</code>, oscureciendo o aclarando según los colores de la capa inferior.</td>
+                        <td>Produce un efecto de contraste y saturación.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>darken</code></td>
+                        <td>Conserva los colores más oscuros entre las dos capas.</td>
+                        <td>Selecciona el color más oscuro de cada píxel de ambas capas.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>lighten</code></td>
+                        <td>Conserva los colores más claros entre las dos capas.</td>
+                        <td>Selecciona el color más claro de cada píxel de ambas capas.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>color-dodge</code></td>
+                        <td>Aclara los colores de la capa inferior según los de la capa superior.</td>
+                        <td>Aclara las áreas de la imagen de la capa inferior.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>color-burn</code></td>
+                        <td>Oscurece los colores de la capa inferior según los de la capa superior.</td>
+                        <td>Oscurece las áreas de la imagen de la capa inferior.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>difference</code></td>
+                        <td>Resta los colores de la capa superior de los de la capa inferior.</td>
+                        <td>Produce un efecto de inversión de colores.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>exclusion</code></td>
+                        <td>Similar a <code>Difference</code>, pero con una apariencia menos extrema.</td>
+                        <td>Combina los colores de ambas capas con un efecto de exclusión.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>hard-light</code></td>
+                        <td>Combina <code>Multiply</code> y <code>Screen</code>, de manera más intensa.</td>
+                        <td>Produce un efecto más fuerte de contraste y saturación.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>soft-light</code></td>
+                        <td>Similar a <code>Overlay</code>, pero con una apariencia más suave.</td>
+                        <td>Produce un efecto más suave de contraste y saturación.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>hue</code></td>
+                        <td>Preserva el brillo y saturación de la capa inferior, adoptando el tono de la capa superior.</td>
+                        <td>Aplica el tono de la capa superior a la capa inferior.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>saturation</code></td>
+                        <td>Preserva el brillo y tono de la capa inferior, adoptando la saturación de la capa superior.</td>
+                        <td>Aplica la saturación de la capa superior a la capa inferior.</td>
+                    </tr>
+                    <tr class="c1">
+                        <td><code>color</code></td>
+                        <td>Preserva el brillo de la capa inferior, pero adopta el tono y saturación de la capa superior.</td>
+                        <td>Aplica el tono y saturación de la capa superior a la capa inferior.</td>
+                    </tr>
+                    <tr class="c2">
+                        <td><code>luminosity</code></td>
+                        <td>Preserva el tono y saturación de la capa inferior, adoptando el brillo de la capa superior.</td>
+                        <td>Aplica el brillo de la capa superior a la capa inferior.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br><br><br>
+            <table>
+              <thead>
+                <tr class="c1">
+                  <th>Función</th>
+                  <th>Descripción</th>
+                  <th>Valores</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="c2">
+                  <td><code>blur(&lt;valor&gt;)</code></td>
+                  <td>Aplica un desenfoque al elemento</td>
+                  <td><code>&lt;valor&gt;</code>: cantidad de desenfoque a aplicar</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>brightness(&lt;valor&gt;)</code></td>
+                  <td>Ajusta el brillo del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: completamente oscuro, 1: original</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>contrast(&lt;valor&gt;)</code></td>
+                  <td>Ajusta el contraste del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: completamente gris, 1: original</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>grayscale(&lt;valor&gt;)</code></td>
+                  <td>Convierte el elemento a escala de grises</td>
+                  <td><code>&lt;valor&gt;</code>: 0: original, 1: escala de grises</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>hue-rotate(&lt;valor&gt;)</code></td>
+                  <td>Gira el espectro de colores del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: cantidad de grados en sentido horario (0 a 360deg)</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>invert(&lt;valor&gt;)</code></td>
+                  <td>Invierte los colores del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: original, 1: invertido</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>opacity(&lt;valor&gt;)</code></td>
+                  <td>Ajusta la opacidad del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: transparente, 1: original</td>
+                </tr>
+                <tr class="c1">
+                  <td><code>saturate(&lt;valor&gt;)</code></td>
+                  <td>Ajusta la saturación del elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: grisáceo, 100%: original</td>
+                </tr>
+                <tr class="c2">
+                  <td><code>sepia(&lt;valor&gt;)</code></td>
+                  <td>Aplica un tono sepia al elemento</td>
+                  <td><code>&lt;valor&gt;</code>: 0: original, 1: sepia completo</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <a href="#top">
+          <button class="scrollearArriba"><img src="../../Archivos Multimedia/flechaArriba.png" alt="Subir"></button>
+        </a>
+      </div><br><br>
+    </main>
+    <footer>
+      <div class="container-fluid text-center esclarecer">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Ayúdanos a mejorar</li>
+                      <li><a href="../Footer/hazteTutor.html">Hazte tutor</a></li>
+                      <li><a href="../Footer/hazteProgramador.html">Hazte programador</a></li>
+                      <li><a href="../Footer/patrocinanos.html">Patrocínanos</a></li>
+                      <li><a href="../Footer/asociacion.html">Asóciate con nosotros</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Compañía</li>
+                      <li><a href="../Footer/quienesSomos.html">Quiénes somos</a></li>
+                      <li><a href="../Footer/principios.html">Principios</a></li>
+                      <li><a href="../Footer/educadores.html">Educadores</a></li>
+                      <li><a href="../Header/contactanos.html">Contacto</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Otros</li>
+                      <li><a href="../Footer/Ayuda.html">Ayuda</a></li>
+                      <li><a href="../Footer/terminos.html">Términos de servicio</a></li>
+                      <li><a href="../Footer/politica.html">Política de privacidad</a></li>
+                      <li><a href="../Footer/cookies.html">Cookies</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Redes</li>
+                      <li><a href="https://www.instagram.com/fvck.groka/" target="_blank"><img src="../../Archivos Multimedia/instagram.png" alt="Instagram"></a></li>
+                      <li><a href="https://x.com/gorkajangiZ" target="_blank"><img src="../../Archivos Multimedia/twitter.png" alt="Twitter/X"></a></li>
+                      <li><a href="https://www.tiktok.com/@grokajangiz" target="_blank"><img src="../../Archivos Multimedia/tiktok.png" alt="Tiktok"></a></li>
+                      <li><a href="../noTengoFacebook.html" target="_blank"><img src="../../Archivos Multimedia/facebook.png" alt="Facebook"></a></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p style="color: grey;text-align: center;">Copyright © 2025 Ekaitza Org. Todos los derechos reservados. HTMLearning.</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

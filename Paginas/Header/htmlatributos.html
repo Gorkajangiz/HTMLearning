@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atributos - HTML</title>
+    <link rel="icon" type="image/png" href="../../Archivos Multimedia/LogoReducido.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../HTMLearnEs - Estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <header>
+      <nav>
+        <div class="NavegadoresCompletos">
+          <div class="contenedorLogo">
+            <a href="../Header/HTMLearnES.html">
+              <img src="../../Archivos Multimedia/LogoReducido.png" alt="HTMLearning">
+            </a>
+          </div>
+          <ul class="navegadores2">
+            <li>
+              <a href="../Header/HTMLearnES.html" class="btn SinFlecha">Inicio</a>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton htmlespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Html <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/htmlinformacion.html" class="MQM">Información</a></li>
+                <li><a href="../Header/htmlatributos.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/htmlguias.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/htmlejercicios.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton cssespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Css <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/cssinformacion.html" class="MQM">Información</a></li>
+                <li><a href="../Header/cssatributos.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/cssguias.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/cssejercicios.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle dropdownBoton javascriptespecial" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript <i class="bi bi-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="../Header/badgateway.html" class="MQM">Información</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Guías</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Atributos</a></li>
+                <li><a href="../Header/badgateway.html" class="MQM">Ejercicios</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="../Footer/precios.html" class="btn SinFlecha">Precios</a>
+            </li>
+            <li>
+              <a href="../Header/contactanos.html" class="btn SinFlecha">Contáctanos</a>
+            </li>
+          </ul>
+          <div class="derecha">
+            <div class="navegadores3">
+              <a href="../Header/iniciasesion.html" class="btn SinFlecha">Iniciar Sesión</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="estandar" style="padding-left: 30px;">  
+          <h1>Guía de Etiquetas HTML</h1>
+            <ul>
+              <li>
+                <strong>&lt;html&gt;</strong>
+                <p>Define el elemento raíz de un documento HTML.</p>
+              </li>
+              <li>
+                <strong>&lt;head&gt;</strong>
+                <p>Contiene metadatos sobre el documento HTML.</p>
+              </li>
+              <li>
+                <strong>&lt;title&gt;</strong>
+                <p>Especifica el título del documento, que aparece en la pestaña del navegador.</p>
+              </li>
+              <li>
+                <strong>&lt;base&gt;</strong>
+                <p>Define la URL base para todos los enlaces relativos del documento.</p>
+              </li>
+              <li>
+                <strong>&lt;meta&gt;</strong>
+                <p>Proporciona metadatos como descripción, codificación de caracteres, palabras clave, etc.</p>
+              </li>
+              <li>
+                <strong>&lt;link&gt;</strong>
+                <p>Conecta el documento con recursos externos, como hojas de estilo.</p>
+              </li>
+              <li>
+                <strong>&lt;style&gt;</strong>
+                <p>Permite definir estilos CSS directamente en el documento.</p>
+              </li>
+              <li>
+                <strong>&lt;script&gt;</strong>
+                <p>Permite incluir o enlazar scripts de JavaScript.</p>
+              </li>
+              <li>
+                <strong>&lt;body&gt;</strong>
+                <p>Contiene el contenido visible del documento HTML.</p>
+              </li>
+              <li>
+                <strong>&lt;header&gt;</strong>
+                <p>Define el encabezado de una página o sección.</p>
+              </li>
+              <li>
+                <strong>&lt;footer&gt;</strong>
+                <p>Define el pie de página de una página o sección.</p>
+              </li>
+              <li>
+                <strong>&lt;main&gt;</strong>
+                <p>Representa el contenido principal de una página.</p>
+              </li>
+              <li>
+                <strong>&lt;section&gt;</strong>
+                <p>Agrupa contenido relacionado en una sección temática.</p>
+              </li>
+              <li>
+                <strong>&lt;article&gt;</strong>
+                <p>Representa contenido independiente y autocontenido.</p>
+              </li>
+              <li>
+                <strong>&lt;aside&gt;</strong>
+                <p>Define contenido relacionado con el principal, como una barra lateral.</p>
+              </li>
+              <li>
+                <strong>&lt;nav&gt;</strong>
+                <p>Define un conjunto de enlaces de navegación.</p>
+              </li>
+              <li>
+                <strong>&lt;div&gt;</strong>
+                <p>Contenedor genérico para agrupar elementos con fines de diseño o funcionalidad.</p>
+              </li>
+              <li>
+                <strong>&lt;p&gt;</strong>
+                <p>Representa un párrafo de texto.</p>
+              </li>
+              <li>
+                <strong>&lt;h1&gt; a &lt;h6&gt;</strong>
+                <p>Define encabezados, desde el más importante (&lt;h1&gt;) hasta el menos (&lt;h6&gt;).</p>
+              </li>
+              <li>
+                <strong>&lt;span&gt;</strong>
+                <p>Contenedor en línea para aplicar estilos o clases.</p>
+              </li>
+              <li>
+                <strong>&lt;strong&gt;</strong>
+                <p>Define texto importante con énfasis fuerte (normalmente se muestra en negrita).</p>
+              </li>
+              <li>
+                <strong>&lt;em&gt;</strong>
+                <p>Define texto con énfasis (normalmente se muestra en cursiva).</p>
+              </li>
+              <li>
+                <strong>&lt;br&gt;</strong>
+                <p>Inserta un salto de línea.</p>
+              </li>
+              <li>
+                <strong>&lt;hr&gt;</strong>
+                <p>Inserta una línea horizontal para separar contenido.</p>
+              </li>
+              <li>
+                <strong>&lt;a&gt;</strong>
+                <p>Crea un hipervínculo a otra página o recurso.</p>
+              </li>
+              <li>
+                <strong>&lt;img&gt;</strong>
+                <p>Incrusta una imagen en el documento.</p>
+              </li>
+              <li>
+                <strong>&lt;table&gt;</strong>
+                <p>Define una tabla de datos.</p>
+              </li>
+              <li>
+                <strong>&lt;form&gt;</strong>
+                <p>Define un formulario interactivo.</p>
+              </li>
+              <li>
+                <strong>&lt;ul&gt;</strong>
+                <p>Define una lista desordenada.</p>
+              </li>
+              <li>
+                <strong>&lt;ol&gt;</strong>
+                <p>Define una lista ordenada.</p>
+              </li>
+              <li>
+                <strong>&lt;li&gt;</strong>
+                <p>Define un elemento de una lista.</p>
+              </li>
+              <li>
+                <strong>&lt;dl&gt;</strong>
+                <p>Define una lista de definiciones.</p>
+              </li>
+              <li>
+                <strong>&lt;dt&gt;</strong>
+                <p>Define un término dentro de una lista de definiciones.</p>
+              </li>
+              <li>
+                <strong>&lt;dd&gt;</strong>
+                <p>Define la descripción de un término en una lista de definiciones.</p>
+              </li>
+              <li>
+                <strong>&lt;blockquote&gt;</strong>
+                <p>Define una cita larga.</p>
+              </li>
+              <li>
+                <strong>&lt;q&gt;</strong>
+                <p>Define una cita corta en línea.</p>
+              </li>
+              <li>
+                <strong>&lt;cite&gt;</strong>
+                <p>Representa el título de una obra creativa.</p>
+              </li>
+              <li>
+                <strong>&lt;abbr&gt;</strong>
+                <p>Define una abreviatura o acrónimo.</p>
+              </li>
+              <li>
+                <strong>&lt;address&gt;</strong>
+                <p>Define información de contacto.</p>
+              </li>
+              <li>
+                <strong>&lt;b&gt;</strong>
+                <p>Aplica un estilo de negrita sin implicar importancia.</p>
+              </li>
+              <li>
+                <strong>&lt;i&gt;</strong>
+                <p>Aplica un estilo de cursiva sin implicar énfasis.</p>
+              </li>
+              <li>
+                <strong>&lt;small&gt;</strong>
+                <p>Reduce el tamaño del texto.</p>
+              </li>
+              <li>
+                <strong>&lt;mark&gt;</strong>
+                <p>Resalta texto como marcado.</p>
+              </li>
+              <li>
+                <strong>&lt;del&gt;</strong>
+                <p>Indica texto eliminado.</p>
+              </li>
+              <li>
+                <strong>&lt;ins&gt;</strong>
+                <p>Indica texto insertado.</p>
+              </li>
+              <li>
+                <strong>&lt;sub&gt;</strong>
+                <p>Representa texto como subíndice.</p>
+              </li>
+              <li>
+                <strong>&lt;sup&gt;</strong>
+                <p>Representa texto como superíndice.</p>
+              </li>
+              <li>
+                <strong>&lt;code&gt;</strong>
+                <p>Representa un fragmento de código.</p>
+              </li>
+              <li>
+                <strong>&lt;pre&gt;</strong>
+                <p>Representa texto preformateado.</p>
+              </li>
+              <li>
+                <strong>&lt;var&gt;</strong>
+                <p>Define una variable en un contexto matemático o de programación.</p>
+              </li>
+              <li>
+                <strong>&lt;samp&gt;</strong>
+                <p>Representa una salida de computadora.</p>
+              </li>
+              <li>
+                <strong>&lt;kbd&gt;</strong>
+                <p>Representa una entrada del teclado.</p>
+              </li>
+              <li>
+                <strong>&lt;time&gt;</strong>
+                <p>Representa una fecha u hora específica.</p>
+              </li>
+              <li>
+                <strong>&lt;progress&gt;</strong>
+                <p>Representa el progreso de una tarea.</p>
+              </li>
+              <li>
+                <strong>&lt;meter&gt;</strong>
+                <p>Representa un valor en un rango conocido.</p>
+              </li>
+              <li>
+                <strong>&lt;fieldset&gt;</strong>
+                <p>Agrupa elementos relacionados dentro de un formulario.</p>
+              </li>
+              <li>
+                <strong>&lt;legend&gt;</strong>
+                <p>Proporciona un título a un elemento &lt;fieldset&gt;.</p>
+              </li>
+              <li>
+                <strong>&lt;label&gt;</strong>
+                <p>Asocia un texto con un control de formulario.</p>
+              </li>
+              <li>
+                <strong>&lt;input&gt;</strong>
+                <p>Define un control interactivo para formularios.</p>
+              </li>
+              <li>
+                <strong>&lt;button&gt;</strong>
+                <p>Define un botón clicable.</p>
+              </li>
+              <li>
+                <strong>&lt;select&gt;</strong>
+                <p>Define un menú desplegable.</p>
+              </li>
+              <li>
+                <strong>&lt;option&gt;</strong>
+                <p>Define una opción dentro de un menú desplegable.</p>
+              </li>
+              <li>
+                <strong>&lt;textarea&gt;</strong>
+                <p>Define un campo de texto multilínea.</p>
+              </li>
+              <li>
+                <strong>&lt;optgroup&gt;</strong>
+                <p>Agrupa opciones relacionadas dentro de un menú desplegable.</p>
+              </li>
+              <li>
+                <strong>&lt;output&gt;</strong>
+                <p>Representa el resultado de un cálculo.</p>
+              </li>
+              <li>
+                <strong>&lt;canvas&gt;</strong>
+                <p>Proporciona un área para gráficos dinámicos.</p>
+              </li>
+              <li>
+                <strong>&lt;svg&gt;</strong>
+                <p>Permite dibujar gráficos vectoriales.</p>
+              </li>
+              <li>
+                <strong>&lt;iframe&gt;</strong>
+                <p>Incrusta otro documento HTML dentro de la página.</p>
+              </li>
+              <li>
+                <strong>&lt;details&gt;</strong>
+                <p>Define un elemento de contenido expandible.</p>
+              </li>
+              <li>
+                <strong>&lt;summary&gt;</strong>
+                <p>Proporciona un resumen para el elemento &lt;details&gt;.</p>
+              </li>
+              <li>
+                <strong>&lt;dialog&gt;</strong>
+                <p>Representa un cuadro de diálogo interactivo.</p>
+              </li>
+              <li>
+                <strong>&lt;audio&gt;</strong>
+                <p>Incrusta contenido de audio.</p>
+              </li>
+              <li>
+                <strong>&lt;video&gt;</strong>
+                <p>Incrusta contenido de video.</p>
+              </li>
+              <li>
+                <strong>&lt;source&gt;</strong>
+                <p>Especifica recursos multimedia alternativos.</p>
+              </li>
+              <li>
+                <strong>&lt;track&gt;</strong>
+                <p>Proporciona subtítulos o pistas de texto para &lt;video&gt; o &lt;audio&gt;.</p>
+              </li>
+              <li>
+                <strong>&lt;map&gt;</strong>
+                <p>Define un mapa de imagen con áreas clicables.</p>
+              </li>
+              <li>
+                <strong>&lt;area&gt;</strong>
+                <p>Define una región dentro de un mapa de imagen.</p>
+              </li>
+              <li>
+                <strong>&lt;noscript&gt;</strong>
+                <p>Proporciona contenido alternativo si JavaScript está deshabilitado.</p>
+              </li>
+              <li>
+                <strong>&lt;embed&gt;</strong>
+                <p>Incrusta un contenido externo (como un complemento).</p>
+              </li>
+              <li>
+                <strong>&lt;object&gt;</strong>
+                <p>Incrusta un recurso externo como una imagen o documento.</p>
+              </li>
+              <li>
+                <strong>&lt;param&gt;</strong>
+                <p>Define parámetros para un objeto incrustado.</p>
+              </li>
+              <li>
+                <strong>&lt;marquee&gt;</strong>
+                <p>Crea texto o contenido que se desplaza automáticamente, ya sea horizontal o verticalmente. Es una etiqueta obsoleta y no se recomienda su uso en HTML5.</p>
+              </li>
+            </ul>
+        <a href="#top">
+          <button class="scrollearArriba"><img src="../../Archivos Multimedia/flechaArriba.png" alt="Subir"></button>
+        </a>
+
+    </main>
+    <footer>
+      <div class="container-fluid text-center esclarecer">
+          <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Ayúdanos a mejorar</li>
+                      <li><a href="../Footer/hazteTutor.html">Hazte tutor</a></li>
+                      <li><a href="../Footer/hazteProgramador.html">Hazte programador</a></li>
+                      <li><a href="../Footer/patrocinanos.html">Patrocínanos</a></li>
+                      <li><a href="../Footer/asociacion.html">Asóciate con nosotros</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Compañía</li>
+                      <li><a href="../Footer/quienesSomos.html">Quiénes somos</a></li>
+                      <li><a href="../Footer/principios.html">Principios</a></li>
+                      <li><a href="../Footer/educadores.html">Educadores</a></li>
+                      <li><a href="../Header/contactanos.html">Contacto</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Otros</li>
+                      <li><a href="../Footer/Ayuda.html">Ayuda</a></li>
+                      <li><a href="../Footer/terminos.html">Términos de servicio</a></li>
+                      <li><a href="../Footer/politica.html">Política de privacidad</a></li>
+                      <li><a href="../Footer/cookies.html">Cookies</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="p-3">
+                  <ul>
+                      <li class="footer-header">Redes</li>
+                      <li><a href="https://www.instagram.com/fvck.groka/" target="_blank"><img src="../../Archivos Multimedia/instagram.png" alt="Instagram"></a></li>
+                      <li><a href="https://x.com/gorkajangiZ" target="_blank"><img src="../../Archivos Multimedia/twitter.png" alt="Twitter/X"></a></li>
+                      <li><a href="https://www.tiktok.com/@grokajangiz" target="_blank"><img src="../../Archivos Multimedia/tiktok.png" alt="Tiktok"></a></li>
+                      <li><a href="../noTengoFacebook.html" target="_blank"><img src="../../Archivos Multimedia/facebook.png" alt="Facebook"></a></li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p style="color: grey;text-align: center;">Copyright © 2025 Ekaitza Org. Todos los derechos reservados. HTMLearning.</p>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

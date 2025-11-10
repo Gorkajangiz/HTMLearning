@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../Archivos Multimedia/LogoReducido.png">
+    <title>HTMLearning</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e1dd;
+            overflow: hidden;
+        }
+
+        .scene {
+            perspective: 1200px;
+        }
+
+        .cylinder {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            transform-style: preserve-3d;
+            animation: rotateCylinder 5s infinite ease-in-out;
+            animation-delay: 0.2s;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 40%;
+            max-height: 40%;
+        }
+
+        .logo:nth-child(1) {
+            transform: rotateY(0deg) translateZ(150px);
+        }
+
+        .logo:nth-child(2) {
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .logo:nth-child(3) {
+            transform: rotateY(180deg) translateZ(150px);
+        }
+
+        .logo:nth-child(4) {
+            transform: rotateY(270deg) translateZ(150px);
+        }
+
+        @keyframes rotateCylinder {
+            0%, 20% {
+                transform: rotateY(0deg);
+            }
+            25%, 45% {
+                transform: rotateY(90deg);
+            }
+            50%, 70% {
+                transform: rotateY(180deg);
+            }
+            75%, 95% {
+                transform: rotateY(270deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .stop-rotation {
+            animation-play-state: paused;
+        }
+
+        .logo2-center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.33);
+            z-index: 999;
+            transition: transform 1s ease-in-out;
+        }
+
+        .text-above, .text-below {
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #333;
+            font-size: 28px;
+            font-family: Arial, sans-serif;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .text-above {
+            top: calc(50% - 160px);
+        }
+
+        .text-below {
+            top: calc(50% + 140px);
+        }
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="cylinder" id="cylinder">
+            <div class="logo" id="logo1">
+                <img src="../../Archivos Multimedia/javascript-1.svg" alt="logo1">
+            </div>
+            <div class="logo" id="logo2">
+                <img src="../../Archivos Multimedia/LogoReducido.png" alt="logo2">
+            </div>
+            <div class="logo" id="logo3">
+                <img src="../../Archivos Multimedia/LogoHTML.png" alt="logo3">
+            </div>
+            <div class="logo" id="logoPrincipal">
+                <img src="../../Archivos Multimedia/css-3.svg" alt="logoPrincipal">
+            </div>
+        </div>
+    </div>
+    <script>
+        const logo2 = document.querySelector('#logo2');
+        const cylinder = document.querySelector('#cylinder');
+
+        function stopRotationRandomly() {
+            const animationDuration = 2000;
+            const animationCycles = 2;
+            const delay = animationDuration * animationCycles;
+
+            setTimeout(() => {
+                cylinder.classList.add('stop-rotation');
+                showLogoAndEnlarge();
+            }, delay);
+        }
+
+        function showLogoAndEnlarge() {
+            const logo2Copy = document.createElement('img');
+            logo2Copy.src = "../HTMLearning/Archivos Multimedia/LogoReducido.png";
+            logo2Copy.alt = "logo2 copy";
+            logo2Copy.classList.add('logo2-center');
+            document.body.appendChild(logo2Copy);
+
+            setTimeout(() => {
+                logo2Copy.style.transform = "translate(-50%, -50%) scale(0.5)";
+                showTexts();
+            }, 500);
+
+            setTimeout(() => {
+                window.location.href = "../HTMLearning/Paginas/Header/HTMLearnES.html";
+            }, 3000);
+        }
+
+        function showTexts() {
+            const textAbove = document.createElement('div');
+            textAbove.classList.add('text-above');
+            textAbove.textContent = "HTMLearning";
+
+            const textBelow = document.createElement('div');
+            textBelow.classList.add('text-below');
+            textBelow.textContent = "Learning with you";
+
+            document.body.appendChild(textAbove);
+            document.body.appendChild(textBelow);
+
+            setTimeout(() => {
+                textAbove.style.opacity = 1;
+                textBelow.style.opacity = 1;
+            }, 50);
+        }
+
+        window.onload = function() {
+            stopRotationRandomly();
+        };
+    </script>
+</body>
+</html>
