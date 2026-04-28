@@ -1,20 +1,73 @@
-Hola Jesus! He cronometrado cuanto tiempo he invertido en crear esta página y, 
-en total, me ha llevado 62 horas, 51 minutos y 38 segundos (62:51:38). Quiero aclarar que algunos de los elementos 
-estan o bien sacados de getbootstrap (evidentemente) o implementados de tutoriales 
-de terceros que he ido recopilando para añadir a mi página y darle ese toque profesional 
-que necesita de ayuda externa si o si. Alrededor de un tercio de las etiquetas que no hemos 
-dado en clase, así como los atributos del estilo "focus", los "::" para los sub-elementos y 
-un poquito de JavaScript son sacados de estos tutoriales, pero el resto lo he escrito yo 
-(incluido el codigo de los tutoriales, que lo he escrito a mano desde videos y las etiquetas 
-nuevas que he tenido que aprender) y lo he diseñado yo desde cero, navegando por la página 
-para ajustar hasta el minimo detalle a que sea fácil y cómoda de navegar. 
+<h1 align="center">HTMLearning</h1>
 
+<p align="center">
+Una página destinada a enseñar HTML, CSS y JavaScript
+</p>
 
-Quiero aprovechar este espacio también para decir que esta página es el hijo de mis habilidades
-como programador novato desde que nos dijiste que tendríamos que hacer una hasta mis habilidades
-actuales con todo lo que he aprendido por el camino. Esto significa que, en muchos casos, mi codigo
-estará desordenado, será feo, tendrá errores, no funcionará correctamente, sera redundante o muy mal
-etiquetado. Si hoy en día reinventase esta página de cero me quedarían la mitad de lineas y el doble
-de calidad, pero es un buen primer paso.
+<hr/>
 
-Gracias por leer esto y espero que disfrutes de navegar por mi página. Un saludo, Gorka :D
+<h2>📌 Descripción del proyecto</h2>
+
+<p>
+Un proyecto creado para las clases de HTML y CSS durante mi primer año en el Grado Superior de Desarrollo de Aplicaciones Multiplataforma</p>
+
+<p>
+La página actualmente sirve como un mockup de una página real, con un paywall que limita contenido para ofrecer solo lo básico</p>
+
+---
+
+<h2>🛠️ Características principales</h2>
+
+<ul>
+  <li>Experiencia de navegación totalmente inmersiva</li>
+  <li>HTML y CSS pulidos y bien estructurados</li>
+  <li>Nivel de detalle mucho más alto del necesario para el proyecto en su momento</li>
+</ul>
+
+---
+
+<h2>🖥️ Capturas de la aplicación</h2>
+
+<h3>Pantalla de carga</h3>
+<img src="resReadme/htmlearning.png" width="700"/>
+
+<h3>Landing page</h3>
+<img src="resReadme/htmlearning1.png" width="700"/>
+
+<h3>Scroll</h3>
+<img src="resReadme/htmlearning2.png" width="700"/>
+
+<h3>Scroll</h3>
+<img src="resReadme/htmlearning3.png" width="700"/>
+
+<h3>Scroll</h3>
+<img src="resReadme/htmlearning4.png" width="700"/>
+
+<h3>Guías</h3>
+<img src="resReadme/htmlearning5.png" width="700"/>
+
+<h3>Precios</h3>
+<img src="resReadme/htmlearning6.png" width="700"/>
+
+<h3>Contacto</h3>
+<img src="resReadme/htmlearning7.png" width="700"/>
+
+<h3>Inicio de sesión y registro</h3>
+<img src="resReadme/htmlearning8.png" width="700"/>
+
+<h3>Formularios varios</h3>
+<img src="resReadme/htmlearning9.png" width="700"/>
+
+<h3>Extras</h3>
+<img src="resReadme/htmlearning10.png" width="700"/>
+
+---
+
+<h2>🚀 Tecnologías utilizadas</h2>
+
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+  <li>Bootstrap</li>
+</ul>
